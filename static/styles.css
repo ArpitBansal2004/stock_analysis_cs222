@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#stock-select {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#chart-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#chart-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-right: 10px;
+}
+
+.centered-heading {
+    text-align: center;
+    font-size: 2em; 
+    margin-top: 20px;
+    color: #333;
+}

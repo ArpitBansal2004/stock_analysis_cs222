@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <script src="static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <div>
+        <h1 class="centered-heading">TradingLead</h1>
+        <label for="stock-select">Choose a Stock:</label>
+        <select id="stock-select" onchange="toggleCustomStockInput(this.value)">
+            <option value="AAPL">AAPL</option>
+            <option value="ADBE">ADBE</option>
+            <option value="AGCO">AGCO</option>
+            <option value="AMD">AMD</option>
+            <option value="AMZN">AMZN</option>
+            <option value="META">META</option>
+            <option value="MSI">MSI</option>
+            <option value="NVDA">NVDA</option>
+            <option value="TSE">TSE</option>
+            <option value="TSLA">TSLA</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    
+    <!-- Hidden input field for custom stock symbol -->
+    <div id="custom-stock-input" style="display:none;">
+        <label for="custom-stock-symbol">Enter Stock Symbol:</label>
+        <input type="text" id="custom-stock-symbol">
+    </div>
+    
+    <button onclick="updateStockChart()">Predict</button>
+    
+    
+    <div id="chart-container">
+        <!-- The chart will be displayed here -->
+    </div>
+    
+</body>
+</html>
